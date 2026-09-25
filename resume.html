@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pavan Kumar S - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #111827;
+      background: #fafaf7;
+      padding: 40px 20px;
+    }
+    
+    .resume-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 35px 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #7C5CFF;
+      padding-bottom: 12px;
+    }
+    
+    .name {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    
+    .contact-info {
+      font-size: 12px;
+      color: #374151;
+      word-break: break-word;
+    }
+    
+    .contact-info a {
+      color: #7C5CFF;
+      text-decoration: none;
+    }
+    
+    .section {
+      margin-bottom: 16px;
+    }
+    
+    .section-title {
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 4px;
+      color: #111827;
+    }
+    
+    .entry {
+      margin-bottom: 10px;
+    }
+    
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+    
+    .entry-title {
+      font-weight: 700;
+      color: #111827;
+    }
+    
+    .entry-date {
+      font-size: 12px;
+      color: #6b7280;
+      font-weight: 500;
+    }
+    
+    .entry-subtitle {
+      font-size: 13px;
+      color: #7C5CFF;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+    
+    .entry-desc {
+      font-size: 13px;
+      color: #374151;
+      line-height: 1.5;
+    }
+    
+    .bullet-list {
+      list-style: none;
+      margin: 4px 0;
+    }
+    
+    .bullet-list li {
+      font-size: 13px;
+      color: #374151;
+      margin-bottom: 4px;
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.5;
+    }
+    
+    .bullet-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #7C5CFF;
+      font-weight: bold;
+    }
+    
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      font-size: 13px;
+    }
+    
+    .skill-category {
+      margin-bottom: 8px;
+    }
+    
+    .skill-label {
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+    
+    .skill-items {
+      color: #374151;
+      font-size: 12px;
+    }
+    
+    @media (max-width: 600px) {
+      .resume-container {
+        padding: 30px 20px;
+      }
+      
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .entry-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .entry-date {
+        order: -1;
+        margin-bottom: 4px;
+      }
+    }
+    
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      
+      .resume-container {
+        max-width: 100%;
+        box-shadow: none;
+        padding: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="name">Pavan Kumar S</div>
+      <div class="contact-info">
+        6374597517 | <a href="mailto:pavanaugmar@gmail.com">pavanaugmar@gmail.com</a> | 
+        <a href="https://linkedin.com/in/pavankumar0525" target="_blank">linkedin.com/in/pavankumar0525</a> | 
+        <a href="https://github.com/Pavan0525" target="_blank">github.com/Pavan0525</a>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="section">
+      <div class="section-title">Summary</div>
+      <div class="entry-desc">
+        Results-driven Computer Science undergraduate with hands-on experience in DevOps, cloud infrastructure, and AI-powered application development. Proficient in designing CI/CD pipelines, containerized deployments, and serverless architectures on AWS. Demonstrated ability to build full-stack AI applications using FastAPI, React.js, and Large Language Models. Passionate about automating workflows and building scalable, intelligent systems.
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+      <div class="section-title">Experience</div>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Intern</span>
+          <span class="entry-date">June 2026 – July 2026</span>
+        </div>
+        <div class="entry-subtitle">L&T Construction</div>
+        <ul class="bullet-list">
+          <li>Developed a full-stack RAG (Retrieval-Augmented Generation) application featuring semantic search capabilities and a persistent FAISS vector search pipeline</li>
+          <li>Engineered a layered backend using FastAPI and integrated Azure AI Foundry services with a responsive Angular frontend</li>
+          <li>Migrated database queries to SQL Server Stored Procedures using T-SQL and implemented a Repository Pattern architecture for optimized data access</li>
+          <li>Implemented JWT-based authentication and role-based access control along with an admin dashboard</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">DevOps Intern</span>
+          <span class="entry-date">Jan 2026 – Mar 2026</span>
+        </div>
+        <div class="entry-subtitle">Internship Studio</div>
+        <ul class="bullet-list">
+          <li>Designed and implemented CI/CD pipelines using Jenkins and Docker, automating build, test, and release workflows to reduce deployment time and errors</li>
+          <li>Deployed and managed serverless applications on AWS Lambda and configured cloud infrastructure using Amazon Web Services (AWS), improving scalability and reducing operational overhead</li>
+          <li>Containerized and orchestrated applications using Docker and Kubernetes, ensuring high availability and consistent deployment across environments</li>
+          <li>Automated infrastructure provisioning and monitoring tasks, improving system reliability by streamlining DevOps workflows and reducing manual intervention</li>
+          <li>Assisted in log analysis and incident response, contributing to faster issue detection and resolution in production environments</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+      <div class="section-title">Projects</div>
+      
+      <div class="entry">
+        <div class="entry-title">RepoScope</div>
+        <ul class="bullet-list">
+          <li>Developed an AI-powered repository intelligence platform that analyzes software repositories to deliver architecture insights, semantic code search, automated documentation, dependency visualization, and security analysis</li>
+          <li>Engineered backend using FastAPI and integrated Large Language Models (LLMs) for semantic search and intelligent code understanding</li>
+          <li>Built an interactive frontend with React.js, enabling developers to visualize codebase structure and security vulnerabilities in real time</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-title">Argus</div>
+        <ul class="bullet-list">
+          <li>Built an AI-powered DevOps Copilot for intelligent infrastructure monitoring, automated log analysis, CI/CD pipeline assistance, and incident management</li>
+          <li>Integrated LLM-based automation with FastAPI backend to enable real-time anomaly detection and automated incident resolution, reducing mean time to resolution (MTTR)</li>
+          <li>Deployed using Kubernetes and Docker for scalable containerized infrastructure with a responsive React.js dashboard</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Bachelor of Technology — Computer Science and Engineering</span>
+          <span class="entry-date">2024 – Present</span>
+        </div>
+        <div class="entry-subtitle">SRM Institute of Science and Technology, Kattankulathur</div>
+        <div class="entry-desc">CGPA: 8.0 / 10</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Higher Secondary (Class XII)</span>
+          <span class="entry-date">Completed 2024</span>
+        </div>
+        <div class="entry-subtitle">Parampara Academy, Arakkonam</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Secondary School (Class X)</span>
+          <span class="entry-date">Completed 2022</span>
+        </div>
+        <div class="entry-subtitle">Parampara Academy, Arakkonam</div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <div class="section-title">Skills</div>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-label">Languages</div>
+          <div class="skill-items">Tamil, Telugu, English, Hindi</div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-label">Programming</div>
+          <div class="skill-items">Python, JavaScript, HTML, CSS</div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-label">Cloud & DevOps</div>
+          <div class="skill-items">AWS, AWS Lambda, Docker, Kubernetes, Jenkins, CI/CD Pipelines</div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-label">Backend & AI</div>
+          <div class="skill-items">FastAPI, Large Language Models (LLMs), Git</div>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-label">Frontend</div>
+          <div class="skill-items">React.js, CSS, HTML, JavaScript</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Auto-print on load - users can then save as PDF
+    window.addEventListener('load', function() {
+      // Optional: uncomment to auto-open print dialog
+      // window.print();
+    });
+  </script>
+</body>
+</html>
